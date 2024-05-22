@@ -109,7 +109,7 @@ def main(args):
     except ImportError as e:
         print(colorize(f"Failed to import Intel Extension for PyTorch: {e}", RED))
     except Exception as e:
-        print(colorize("An error occurred during the test: {e}", RED))
+        print(colorize(f"An error occurred during the test: {e}", RED))
 
 
 if __name__ == "__main__":
